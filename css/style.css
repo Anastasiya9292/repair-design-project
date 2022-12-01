@@ -1,0 +1,73 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #363636;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/*Header*/
+
+.header {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    background-color: #131313;
+    padding: 24px 90px;
+    color: #fff;
+}
+
+.logo   {
+    color: #E3B873;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 626px;
+}
+
+.menu-item {
+    margin-right: 47px;
+}
+
+.phone {
+    color: #E3B873;
+}
+
+.menu-btn {
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+    background-color: #E3B873;
+    padding: 13px 33px;
+    border-radius: 2px;
+    margin-right: 90px;
+    cursor: pointer;
+}
