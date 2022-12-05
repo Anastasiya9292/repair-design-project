@@ -2,11 +2,25 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     color: #363636;
+    max-width: 1439px;
+    margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 a {
@@ -26,6 +40,21 @@ ul {
 
 }
 
+.button {
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+    background-color: #E3B873;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 0 15px #E3B873;
+}
+
+
 /*Header*/
 
 .header {
@@ -38,9 +67,10 @@ ul {
     color: #fff;
 }
 
-.logo   {
+.logo {
     color: #E3B873;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -62,12 +92,208 @@ ul {
 }
 
 .menu-btn {
-    text-transform: uppercase;
-    font-style: italic;
-    color: #fff;
-    background-color: #E3B873;
     padding: 13px 33px;
-    border-radius: 2px;
     margin-right: 90px;
+}
+
+/*Headline*/
+
+.intro {
+    background: url(/images/headline.jpg) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 707px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.intro-inner {
+    max-width: 650px;
+    padding-left: 134px;
+    padding-top: 194px;
+}
+
+.intro-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    width: 100%;
+    max-width: 531px;
+}
+
+.intro-title-gold {
+    color: #E3B873;
+}
+
+.intro-text {
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    width: 100%;
+    max-width: 521px;
+}
+
+.intro-btn-one {
+    font-size: 11px;
+    line-height: 11px;
+    padding: 20px 44px;
+    margin-right: 21px;
+}
+
+.intro-btn-two {
+    font-size: 11px;
+    line-height: 11px;
+    padding: 20px 23px;
+    background-color: transparent;
+    border: 1px solid #fff
+}
+
+.intro-btn-two:hover {
+    box-shadow: none;
+}
+
+/*Content*/
+
+.content {
+    background-color: #131313;
+    height: 1074px;
+    color: #fff;
+}
+
+.galary-list {
+    font-family: 'Yeseva One', cursive;
+    font-size: 14px;
+    line-height: 19.5px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: end;
+    padding: 107px 130px 53px 0px;
+}
+
+.galary-item {
+    margin-right: 60px;
+}
+
+.galary-item:first-child {
+    color: #E3B873;
+    position: relative;
+
+}
+
+.galary-item-line::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #E3B873;
+    width: 100%;
+    position: absolute;
+    margin-top: 7px;
+}
+
+.galary-item:not(:first-child) {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.projects-galary {
+    margin: 0 134px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galary-foto {
+    box-shadow: 0 50px 30px rgba(0, 0, 0, 0.15);
+}
+
+.projects-title {
+    width: 100%;
+    max-width: 165px;
+    text-transform: uppercase;
+    font-size: 27px;
+    line-height: 37px;
+    color: #E3B873;
+}
+
+.projects-text {
+    font-size: 14px;
+    line-height: 27px;
+    width: 100%;
+    max-width: 442px;
+    margin: 33px 0 58px;
+}
+
+.projects-item-title {
+    text-transform: uppercase;
+    color: #E3B873;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.projects-item-text {
+    font-size: 13px;
+    line-height: 21px;
+    margin: 9px 0 0;
+}
+
+.projects-list {
+    width: 100%;
+    max-width: 372px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 115px 115px;
+    row-gap: 34px;
+}
+
+.projects-item:first-child {
+    width: 100%;
+    max-width: 93px;
+}
+
+.circles {
+    padding: 0 30px;
+}
+
+.arrow-left,
+.arrow-right {
     cursor: pointer;
+}
+
+.galary-foto {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 689px;
+    max-height: 483px;
+}
+
+/*Video*/
+
+
+
+/*Video-Checkbox*/
+.label {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked+.fake::before {
+    opacity: 1;
 }
