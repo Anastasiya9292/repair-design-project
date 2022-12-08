@@ -447,9 +447,185 @@ hr {
     font-size: 20px;
     line-height: 27px;
     color: #181818;
+    margin-bottom: 20px;
 }
+
+.repair-icon-hammer {
+    display: block;
+    margin: 0 auto 31px;
+}
+
+.repair-icon {
+    position: relative;
+}
+
+.repair-icon::after {
+    content: "";
+    height: 1.5px;
+    width: 32px;
+    background-color: #E3B873;
+    position: absolute;
+    top: 49%;
+    left: 46%;
+}
+
+.repair-icon::before {
+    content: "";
+    height: 1.5px;
+    width: 32px;
+    background-color: #E3B873;
+    position: absolute;
+    top: 49%;
+    left: 51.8%;
+}
+
 
 .repairs-examples {
     display: flex;
+    justify-content: space-between;
+    margin: 0 103px 269px;
+}
+
+.examples-detailed-title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;   
+    margin-bottom: 18px;
+}
+
+ul .examples-detailed-item {
+    list-style-type: disc;
+    color: #959595;
+    font-size: 13px;
+    line-height: 26.6px;
+}
+
+.examples-detailed {
+    width: 330px;
+    height: 286px;
+    padding: 25px 0 49px 44px;
+    margin: -129px 31px 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 3%);
+    position: relative;
+}
+
+.examples-detailed-cost {
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    width: 228px;
+    height: 54px;
+    padding: 17px 0;
+    margin-left: -45px;
+    background-color: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+/*Measur*/
+
+.measur {
+    background: url(/images/house.png) no-repeat;
+    background-position: 0% 15%;
+}
+
+.measur-container {
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 508px 150px;
+    column-gap: 206px;
+    margin: 0 0 0 234px;
+    grid-template-areas: 
+    "list form"
+    ". cost";
+    grid-auto-flow: dense;
+}
+
+.measur-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
+
+.measur-item {
+    display: flex;
+}
+
+.measur-number {
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height:41px;
+    border-radius: 50%;
+    background-color: #E3B873;
+}
+
+.measur-text {
+    width: 366px;
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.measur-form-container {
+    max-width: 509px;
+    max-height: 506px;
+    background-color: #131313;
+    margin-right: 100px;
+}
+
+.measur-form-title {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    width: 251px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin: 28px auto 29px;
+
+}
+
+.measur-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 16px;
+    max-width: 408px;
+}
+
+.measur-label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.measur-form-box {
+    background-color: #131313;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    
+}
+
+.measur-form-box::placeholder {
+    color: #fff;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.measur-form-box:nth-child(n+2):nth-child(-n+4) {
+    margin-bottom: 48px;
+}
+
+.measur-form-box
