@@ -40,7 +40,7 @@ ul {
     margin: 0 auto;
 }
 
-.button {
+button {
     text-transform: uppercase;
     font-style: italic;
     color: #fff;
@@ -50,7 +50,7 @@ ul {
     cursor: pointer;
 }
 
-.button:hover {
+button:hover {
     box-shadow: 0 0 15px #E3B873;
 }
 
@@ -483,7 +483,7 @@ hr {
 .repairs-examples {
     display: flex;
     justify-content: space-between;
-    margin: 0 103px 269px;
+    margin: 0 103px 249px;
 }
 
 .examples-detailed-title {
@@ -530,19 +530,16 @@ ul .examples-detailed-item {
 
 .measur {
     background: url(/images/house.png) no-repeat;
-    background-position: 0% 15%;
+    background-position: -6px -88px;
+    padding-top: 20px;
 }
 
 .measur-container {
     display: grid;
     grid-template-columns: 550px 550px;
     grid-template-rows: 508px 150px;
-    column-gap: 206px;
-    margin: 0 0 0 234px;
-    grid-template-areas: 
-    "list form"
-    ". cost";
-    grid-auto-flow: dense;
+    column-gap: 45px;
+    margin: 0 0 220px 234px;
 }
 
 .measur-list {
@@ -565,10 +562,11 @@ ul .examples-detailed-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 41px;
-    height:41px;
+    width: 58px;
+    height:58px;
     border-radius: 50%;
     background-color: #E3B873;
+    border: 8px solid #fff;
 }
 
 .measur-text {
@@ -582,6 +580,7 @@ ul .examples-detailed-item {
 
 .measur-form-container {
     max-width: 509px;
+    width: 100%;
     max-height: 506px;
     background-color: #131313;
     margin-right: 100px;
@@ -594,7 +593,7 @@ ul .examples-detailed-item {
     font-size: 18px;
     line-height: 26px;
     color: #fff;
-    margin: 28px auto 29px;
+    margin: 28px auto 39px;
 
 }
 
@@ -609,13 +608,14 @@ ul .examples-detailed-item {
     font-size: 13px;
     line-height: 21px;
     color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
 }
 
 .measur-form-box {
     background-color: #131313;
+    color: #fff;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    
 }
 
 .measur-form-box::placeholder {
@@ -628,4 +628,144 @@ ul .examples-detailed-item {
     margin-bottom: 48px;
 }
 
-.measur-form-box
+.measur-checkbox-container {
+    margin-left: 49px;
+}
+
+.measur-checkbox-label {
+    display: flex;
+    cursor: pointer;
+}
+
+.measur-checkbox {
+    display: none;
+}
+
+.measur-checkbox-fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background-color: #E3B873;
+    color: #fff;  
+    justify-content: center;
+    margin-right: 9px;
+}
+
+.measur-checkbox-fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.measur-checkbox:checked+.measur-checkbox-fake::before {
+    opacity: 1;
+}
+
+.checkbox-text {
+    font-size: 14px;
+    line-height: 23px;
+    width: 250px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.measur-form-btn {
+    width: 213px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 21px;
+    font-style: normal;
+    margin: 19px 0px 0px 244px;
+}
+
+.save-cost {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.img-box {
+    width: 74px;
+    height: 74px;
+    overflow: hidden;
+}
+
+.save-cost-icon {
+    object-fit: cover;
+    object-position: -20px -9px;
+}
+
+.save-cost-text {
+    width: 228px;
+    margin-left: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(227, 184, 115, 1);
+}
+
+/*Fantasies*/
+
+.fantasies .container {
+    background: url(/images/fantaies-background.jpg) no-repeat;
+    display: flex;
+
+}
+
+.fantasies-text {
+    margin: 137px 205px 0 99px;
+}
+
+.fantasies-title {
+    font-size: 27px;
+    line-height: 37px;
+    color: #E3B873;
+    width: 283px;
+    text-transform: uppercase;
+    margin-bottom: 47px;
+}
+
+.fantasies-list {
+    font-size: 20px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.fantasies-item {
+    margin-bottom: 11px;
+    display: block;
+    width: fit-content;
+}
+
+.fantasies-item::after {
+    content: "";
+    display: block;
+    height: 0.6px;
+    background-color: #E3B873;
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+}
+
+.fantasies-item:hover{
+color:#E3B873;
+cursor: pointer;
+} 
+
+.fantasies-item:hover:after {
+    width: 100%;
+}
+
+.column-left {
+    margin-top: -40px;
+}
+
+.fantasies-image-clock {
+    margin-bottom: 39px;
+}
+
+.column-right {
+    margin-top: -112px;
+}
+
+.fantasies-image-lamp {
+    margin-bottom: 36px;
+}
