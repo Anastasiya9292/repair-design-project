@@ -708,7 +708,7 @@ ul .examples-detailed-item {
 .fantasies .container {
     background: url(/images/fantaies-background.jpg) no-repeat;
     display: flex;
-
+    margin-bottom: 70px;
 }
 
 .fantasies-text {
@@ -769,3 +769,120 @@ cursor: pointer;
 .fantasies-image-lamp {
     margin-bottom: 36px;
 }
+
+/*Clients*/
+
+.clients {
+    background: url(/images/clients-background.jpg) no-repeat bottom left;
+}
+
+.clients-title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.hands-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    position:relative
+}
+
+.hands-icon::before {
+    content: "";
+    height: 1.5px;
+    width: 32px;
+    background-color: #E3B873;
+    position: absolute;
+    top: 36%;
+    left: 46%;
+}
+
+.hands-icon::after {
+    content: "";
+    height: 1.5px;
+    width: 32px;
+    background-color: #E3B873;
+    position: absolute;
+    top: 36%;
+    left: 51.7%;
+}
+
+.clients-recommend {
+    width: 380px;
+    text-align: center;
+    margin: 0 auto 47px;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.clients-card-container {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 1235px;
+    margin: 0 auto 0;
+}
+
+.clients-card {
+    width: 376px;
+    height: 428px;
+    padding: 24px 32px 0 20px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.clients-image {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.clients-card-title {
+    display: inline-block;
+    width: 178px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 23px;
+    vertical-align: 21px;
+}
+
+.clients-card-text {
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+}
+
+.clients-card-area {
+    width: 293px;
+    height: 54px;
+    background-color: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Yeseva One', cursive;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    padding: 0 17px 0;
+    position: relative;
+    margin-top: -32px;
+    margin-bottom: 354px;
+}
+
+.clients-card-area p:nth-child(2n):nth-child(-1n+3) {
+    margin-right: 33px;
+}
+
+.clients-card-area::after {
+    content: "";
+    width: 0.5px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 46%;
+}
+
