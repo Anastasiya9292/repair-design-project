@@ -58,12 +58,12 @@ label {
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
- }
+}
 
- input::placeholder {
+input::placeholder {
     font-size: 14px;
     line-height: 23px;
- }
+}
 
 
 /*Header*/
@@ -80,6 +80,8 @@ label {
 
 .logo {
     color: #E3B873;
+    cursor: default;
+    margin-right: 93px;
 }
 
 .nav {
@@ -104,7 +106,6 @@ label {
 
 .menu-btn {
     padding: 13px 33px;
-    margin-right: 90px;
 }
 
 /*Headline*/
@@ -331,7 +332,7 @@ label {
     width: 100%;
     max-width: 817px;
     position: relative;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15) ;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 .video-icon-play {
@@ -344,6 +345,8 @@ label {
     left: 46%;
     bottom: 155px;
     width: 123px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 hr {
@@ -386,7 +389,7 @@ hr {
     max-height: 51px;
     font-size: 13px;
     line-height: 26px;
-    font-style:normal;
+    font-style: normal;
     padding: 0;
 }
 
@@ -437,7 +440,6 @@ hr {
 .input-video-form {
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3)
-
 }
 
 /*Repairs*/
@@ -489,7 +491,7 @@ hr {
 .examples-detailed-title {
     font-size: 18px;
     line-height: 25px;
-    color: #363636;   
+    color: #363636;
     margin-bottom: 18px;
 }
 
@@ -563,7 +565,7 @@ ul .examples-detailed-item {
     justify-content: center;
     align-items: center;
     width: 58px;
-    height:58px;
+    height: 58px;
     border-radius: 50%;
     background-color: #E3B873;
     border: 8px solid #fff;
@@ -646,7 +648,7 @@ ul .examples-detailed-item {
     width: 18px;
     height: 18px;
     background-color: #E3B873;
-    color: #fff;  
+    color: #fff;
     justify-content: center;
     margin-right: 9px;
 }
@@ -745,10 +747,10 @@ ul .examples-detailed-item {
     transition: width 0.4s ease-in-out;
 }
 
-.fantasies-item:hover{
-color:#E3B873;
-cursor: pointer;
-} 
+.fantasies-item:hover {
+    color: #E3B873;
+    cursor: pointer;
+}
 
 .fantasies-item:hover:after {
     width: 100%;
@@ -788,7 +790,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
-    position:relative
+    position: relative
 }
 
 .hands-icon::before {
@@ -821,7 +823,7 @@ cursor: pointer;
 
 .clients-card-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     max-width: 1235px;
     margin: 0 auto 0;
@@ -884,5 +886,355 @@ cursor: pointer;
     background-color: #fff;
     position: absolute;
     left: 46%;
+}
+
+
+/*Addres-form*/
+
+.addres-form-container {
+    width: 100%;
+    max-width: 883px;
+    background-color: #131313;
+    position: absolute;
+    top: -243px;
+    left: 19%;
+}
+
+.addres-form-title {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 34px 0 48px;
+
+}
+
+.addres-form {
+    margin: 0 auto 46px;
+    max-width: 520px;
+}
+
+.addres-window {
+    display: inline-block;
+}
+
+.addres-form-left {
+    width: 100%;
+    max-width: 231px;
+    margin-right: 53px;
+}
+
+.addres-form-right {
+    width: 100%;
+    max-width: 231px;
+}
+
+.addres-label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.addres-form-box {
+    width: 100%;
+    background-color: #131313;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.addres-form-box::placeholder {
+    color: #fff;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.addres-form-box:nth-child(n+1):nth-child(-n+2) {
+    margin-bottom: 48px;
+}
+
+.addres-checkbox-label {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto 50px;
+}
+
+.addres-checkbox {
+    display: none;
+}
+
+.addres-checkbox-fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background-color: #E3B873;
+    color: #fff;
+    justify-content: center;
+    margin-right: 9px;
+}
+
+.addres-checkbox-fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.addres-checkbox:checked+.addres-checkbox-fake::before {
+    opacity: 1;
+}
+
+.checkbox-text {
+    font-size: 14px;
+    line-height: 23px;
+    width: 260px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.addres-form-btn {
+    display: block;
+    width: 200px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 27px;
+    font-style: normal;
+    margin: 0 auto 34px;
+}
+
+
+/*Addres*/
+
+.addres .container {
+    position: relative;
+    padding-top: 1px;
+    height: 953px;
+}
+
+
+.addres {
+    background: linear-gradient(rgba(24, 24, 24, 0.9), rgba(24, 24, 24, 0.72)) no-repeat, url(/images/addres-background.jpg) no-repeat;
+}
+
+.addres-text {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #E3B873;
+    width: 100%;
+    max-width: 550px;
+    margin: 274px auto 30px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 32.25%;
+    position: relative;
+    left: -1.5%;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 19%;
+    top: 0%;
+    height: 100%;
+    max-height: 465px;
+    width: 100%;
+    max-width: 925px;
+    position: absolute;
+}
+
+.addres-icon {
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.addres-icon-message {
+    margin-right: 15px;
+}
+
+/*Footer*/
+
+footer.header {
+    padding: 47px 90px;
+}
+
+/*Adaptive 2500px*/
+
+ @media (min-width:2500px) {
+    body {
+        max-width:100%;
+    }
+    .intro {
+        background: url(/images/background-full.jpg) no-repeat;
+    }
+
+    .clients {
+        background: url(/images/clients-background.jpg) no-repeat bottom left 28%;
+    }
+
+    .measur {
+        background-position: 30% -88px;
+    }
+}
+
+/*Adaptive >1180px*/
+
+@media (max-width:1420px) {
+    .examples-image {
+        width: 100%;
+        max-width: 378px;
+    }
+    .projects-text {
+        width: 100%;
+        max-width: 420px;
+}
+}
+
+@media (max-width:1398px) {
+    .measur-container {
+        margin: 0 0 220px 70px;
+    }
+    .projects-text {
+        width: 100%;
+        max-width: 320px;
+}
+}
+
+@media (max-width:1340px) {
+    .fantasies-text {
+        margin: 137px 34px 0 99px;
+    }
+}
+
+@media (max-width:1340px) {
+    .menu-btn {
+        padding: 7px 11px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width:1297px) {
+    .repairs-examples {
+        margin: 0 10px 249px;
+    }
+    .projects-text {
+        width: 100%;
+        max-width: 251px;
+    }
+}
+
+@media (max-width:1250px) {
+    .menu-item {
+        margin-right: 20px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .examples-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .examples-detailed {
+        width: 244px;
+        height: 200px;
+    }
+
+    .repairs-examples {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .measur-container {
+        display: grid;
+        grid-template-columns: 442px 550px;
+    }
+}
+
+@media (max-width:1250px) {
+    .fantasies-image-media {
+        margin-bottom: 39px;
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .fantasies-text {
+        margin: 60px 34px 0 99px;
+    }
+
+    .map-responsive {
+        left: -8.5%;
+    }
+
+    .addres-form-container {
+        left: 11%;
+    }
+
+    .galary-foto {
+        width: 100%;
+        max-width: 589px;
+        max-height: 412px;
+    }
+
+    .projects-item-title {
+        font-size: 13px;
+    }
+
+    .clients-card-container {
+        max-width: 1138px;
+    }
+
+    .clients-card {
+        width: 376px;
+        height: 393px;
+    }
+}
+
+@media (max-width:1250px) {
+    .clients-card {
+        width: 340px;
+        height: 364px;
+    }
+
+    .clients-card-text {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .clients-card-area {
+        width: 268px;
+    }
+
+    .measur-form-container {
+        max-width: 466px;
+        width: 100%;
+    }
+
+    .measur-container {
+        display: grid;
+        grid-template-columns: 450px 526px;
+    }
+    .galary-list {
+        font-size: 11px;
+    }
+
+    .first-checkbox-container {
+        margin: 0 0 96px 461px;
+    }
+}
+
+@media (max-width:1180px) {
+    .measur-container {
+        grid-template-columns: 450px 476px;
+    }
 }
 
