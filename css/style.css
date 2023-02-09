@@ -186,23 +186,17 @@ input::placeholder {
     margin-right: 60px;
 }
 
-.galary-item:first-child {
+.galary-item:hover, .galary-item.active {
+    cursor: pointer;
     color: #E3B873;
-    position: relative;
-
 }
 
-.galary-item-line::after {
+.galary-item:hover::after, .galary-item.active {
     content: "";
     display: block;
     border-bottom: 1px solid #E3B873;
-    width: 100%;
-    position: absolute;
-    margin-top: 7px;
-}
-
-.galary-item:not(:first-child) {
-    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    color: #E3B873;
 }
 
 .projects-galary {
@@ -258,10 +252,6 @@ input::placeholder {
     width: 100%;
     max-width: 93px;
 }
-
-/* .circles {
-    padding: 0 30px;
-} */
 
 .arrow-left,
 .arrow-right {
@@ -1128,7 +1118,7 @@ transition: background 0.4s ease;
 }
 
 .slider__dots-item:hover, .slider__dots-item.active {
-background: #FFFFFF;
+background: #fff;
 }
 
 
