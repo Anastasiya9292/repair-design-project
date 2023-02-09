@@ -259,9 +259,9 @@ input::placeholder {
     max-width: 93px;
 }
 
-.circles {
+/* .circles {
     padding: 0 30px;
-}
+} */
 
 .arrow-left,
 .arrow-right {
@@ -1064,6 +1064,73 @@ ul .examples-detailed-item {
 footer.header {
     padding: 47px 90px;
 }
+
+
+/*Slider Project*/
+
+.slider {
+position: relative;
+margin: 20px 0;
+}
+
+.slider__images {
+position: relative;
+width: 679px;
+height: 472px;
+}
+
+.slider__images-title {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+background: rgba(0,0,0,0.5);
+color: #fff;
+text-align: center;
+z-index: 1;
+padding: 7px 0;
+}
+
+.slider__images .image {
+background-size: cover;
+background-position: center center;
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+opacity: 0;
+transition: opacity 800ms ease;
+}
+
+.slider__images .image.active {
+opacity: 1;
+}
+
+.control {
+    display: flex;
+}
+
+.slider__dots {
+display: flex;
+justify-content: center;
+padding: 0 38px;
+}
+
+.slider__dots-item {
+width: 10px;
+height: 10px;
+background: #ccc;
+border-radius: 50%;
+margin: 0 5px;
+cursor: pointer;
+transition: background 0.4s ease;
+}
+
+.slider__dots-item:hover, .slider__dots-item.active {
+background: #FFFFFF;
+}
+
 
 /*Adaptive 2500px*/
 
